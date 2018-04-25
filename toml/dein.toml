@@ -1,0 +1,85 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'Shougo/vimproc.vim'
+build = 'make'
+
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'
+
+[[plugins]]
+repo = 'tomasr/molokai'
+
+[[plugins]]
+repo = 'simeji/winresizer'
+
+[[plugins]]
+repo = 'Yggdroot/indentLine'
+
+[[plugins]]
+repo = 'bronson/vim-trailing-whitespace'
+
+[[plugins]]
+repo = 'osyo-manga/vim-over'
+
+#カッコ補完
+[[plugins]]
+repo = 'cohama/lexima.vim'
+on_i = 1
+
+#Tree表示
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+
+#toml　syntax
+[[plugins]]
+repo = 'cespare/vim-toml'
+on_ft = 'toml'
+
+#deoplete
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+on_i = 1
+# hook_add {{{
+hook_add = '''
+    source ~/.config/nvim/toml/deoplete.rc.vim
+    "let g:deoplete#enable_at_startup = 1
+    "let g:deoplete#enable_at_smartcase = 1
+    "let g:deoplete#enable_camel_case = 1
+    " let g:deoplete#auto_complete_delay = 1
+    "let g:deoplete#auto_complete_start_length = 1
+'''
+# }}}
+
+[[plugins]]
+repo = 'Shougo/deoplete-clangx'
+on_i = 1
+on_ft = ['c', 'cpp']
+
+[[plugins]]
+repo = 'Shougo/neoinclude.vim'
+on_i = 1
+
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+
+[[plugins]]
+repo = 'thinca/vim-quickrun'
+
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+
+
+[[plugins]]
+repo = 'mattn/sonictemplate-vim'
+# on_i = 1
+#sonictemplate---{{{
+hook_add = '''
+let g:sonictemplate_vim_template_dir = [
+    \'~/.config/nvim/template'
+    \]
+
+'''
+
+#}}}
