@@ -4,6 +4,7 @@ set runtimepath^=~/.deinvim/dein/repos/github.com/Shougo/dein.vim
 if dein#load_state('~/.deinvim/dein')
   call dein#begin('~/.deinvim/dein')
   call dein#load_toml('~/.config/nvim/toml/dein.toml',{'lazy' : 0})
+  call dein#load_toml('~/.config/nvim/toml/colorscheme.toml',{'lazy' : 0})
   call dein#load_toml('~/.config/nvim/toml/dein_lazy.toml',{'lazy' : 1})
   call dein#end()
   call dein#save_state()
@@ -53,6 +54,8 @@ set cursorline
 set cursorcolumn
 "クリップボードにコピー
 set clipboard+=unnamedplus
+"背景の透過
+highlight Normal ctermbg=none
 "End nvim_settings-----}}}
 
 let g:deoplete#enable_at_startup = 1
@@ -65,12 +68,6 @@ nnoremap <silent> <C-n> :NERDTreeToggle<CR>
 "End NEADTREE---------------
 "}}}
 
-"colorscheme---{{{
-set background=dark
-colorscheme molokai
-"colorscheme challenger_deep
-highlight Normal ctermbg=none
-"end.colorscheme---}}}
 
 "simeji/winresizer関連
 let g:winresizer_start_key = '<C-T>'
