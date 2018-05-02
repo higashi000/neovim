@@ -1,0 +1,12 @@
+[[plugins]]
+repo = 'tomasr/molokai'
+
+[[plugins]]
+repo = 'challenger-deep-theme/vim'
+
+# hook_add {{{
+hook_add = '''
+    set background=dark
+    colorscheme molokai
+'''
+# }}}
