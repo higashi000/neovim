@@ -59,28 +59,3 @@ highlight Normal ctermbg=none
 "End nvim_settings-----}}}
 
 let g:deoplete#enable_at_startup = 1
-
-"NEADTREE-------------------{{{
-let g:NERDTreeDirArrow = 1
-let g:NERDTreeDirArrowExpandable = '→'
-let g:NERDTreeDirArrowCollapsible = '↓'
-nnoremap <silent> <C-n> :NERDTreeToggle<CR>
-"End NEADTREE---------------
-"}}}
-
-
-"simeji/winresizer関連
-let g:winresizer_start_key = '<C-T>'
-
-"over.vim {{{
-
-" over.vimの起動
-nnoremap <silent> <Leader>m :OverCommandLine<CR>
-
-" カーソル下の単語をハイライト付きで置換
-nnoremap sub :OverCommandLine<CR>%s/<C-r><C-w>//g<Left><Left>
-
-"コピーした文字列をハイライト付きで置換
-nnoremap subp y:OverCommandLine<CR>%s!<C-r>=substitute(@0, '!', '\\!', 'g')<CR>!!gI<Left><Left><Left>
-
-" }}}
