@@ -9,9 +9,6 @@ build = 'make'
 repo = 'Shougo/neosnippet-snippets'
 
 [[plugins]]
-repo = 'tomasr/molokai'
-
-[[plugins]]
 repo = 'simeji/winresizer'
 
 [[plugins]]
