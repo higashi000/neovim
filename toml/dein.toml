@@ -145,3 +145,11 @@ map <C-k> [ale]
 nmap <silent> [ale]<C-P> <Plug>(ale_previous)
 nmap <silent> [ale]<C-N> <Plug>(ale_next)'''
 # }}}
+
+[[plugins]]
+repo = 'vim-scripts/vim-auto-save'
+#hook_add---{{{
+hook_add = '''
+let g:auto_save = 1
+'''
+#---}}}
