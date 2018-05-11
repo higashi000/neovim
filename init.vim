@@ -23,9 +23,9 @@ set number
 "タイトルを表示
 set title
 "インデント幅
-set shiftwidth=4
+set shiftwidth=2
 "ファイル内にあるタブ文字の表示幅
-set tabstop=4
+set tabstop=2
 "インデント幅
 set expandtab
 "いい感じにインデントを挿入
