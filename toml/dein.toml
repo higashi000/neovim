@@ -12,7 +12,7 @@ repo = 'Shougo/neosnippet-snippets'
 repo = 'simeji/winresizer'
 # hook_add {{{
 hook_add = '''
-let g:winresizer_start_key = '<C-T>'
+let g:winresizer_start_key = '<C-S>'
 '''
 # }}}
 
@@ -123,3 +123,12 @@ let g:ale_sign_column_always = 1
 nmap <silent> [ale]<C-P> <Plug>(ale_previous)
 nmap <silent> [ale]<C-N> <Plug>(ale_next)'''
 # }}}
+
+[[plugins]]
+repo = 'vim-scripts/javacomplete'
+#hook_add {{{
+hook_add = '''
+  autocmd FileType java :setlocal omnifunc=javacomplete#Complete
+  autocmd FileType java :setlocal completefunc=javacomplete#CompleteParamsInfo
+'''
+#}}}
