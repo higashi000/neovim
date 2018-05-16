@@ -1,8 +1,8 @@
 "dein.vim---{{{
-set runtimepath^=~/.deinvim/dein/repos/github.com/Shougo/dein.vim
+set runtimepath^=~/.cache/dein/repos/github.com/Shougo/dein.vim
 
-if dein#load_state('~/.deinvim/dein')
-  call dein#begin('~/.deinvim/dein')
+if dein#load_state('~/.cache/dein')
+  call dein#begin('~/.cache/dein')
   call dein#load_toml('~/.config/nvim/toml/dein.toml',{'lazy' : 0})
   call dein#load_toml('~/.config/nvim/toml/colorscheme.toml',{'lazy' : 0})
   call dein#load_toml('~/.config/nvim/toml/dein_lazy.toml',{'lazy' : 1})
