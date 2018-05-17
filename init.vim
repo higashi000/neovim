@@ -5,6 +5,7 @@ if dein#load_state('~/.cache/dein')
   call dein#begin('~/.cache/dein')
   call dein#load_toml('~/.config/nvim/toml/dein.toml',{'lazy' : 0})
   call dein#load_toml('~/.config/nvim/toml/colorscheme.toml',{'lazy' : 0})
+  call dein#load_toml('~/.config/nvim/toml/tree_plugins.toml',{'lazy' : 1})
   call dein#load_toml('~/.config/nvim/toml/dein_lazy.toml',{'lazy' : 1})
   call dein#end()
   call dein#save_state()
@@ -56,6 +57,9 @@ set cursorcolumn
 set clipboard+=unnamedplus
 "背景の透過
 highlight Normal ctermbg=none
+"アイコンフォント関係
+let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 "End nvim_settings-----}}}
+
 
 let g:deoplete#enable_at_startup = 1
