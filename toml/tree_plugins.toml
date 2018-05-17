@@ -1,0 +1,44 @@
+[[plugins]]
+repo = 'ryanoasis/vim-devicons'
+# hook_add ---{{{
+hook_add = '''
+let g:webdevicons_conceal_nerdtree_brackets = 1
+let g:WebDevIconsNerdTreeAfterGlyphPadding = ' '
+'''
+# }}}
+
+#Tree表示
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+# hook_add {{{
+hook_add = '''
+    let g:NERDTreeDirArrow = 1
+    let g:NERDTreeDirArrowExpandable = '→'
+    let g:NERDTreeDirArrowCollapsible = '↓'
+    nnoremap <silent> <C-n> :NERDTreeToggle<CR>
+'''
+#}}}
+
+[[plugins]]
+repo = 'tiagofumo/vim-nerdtree-syntax-highlight'
+# hook_add ---{{{
+hook_add = '''
+  let s:rspec_red = 'FE405F'
+let s:git_orange = 'F54D27'
+let g:NERDTreeExactMatchHighlightColor = {} " this line is needed to avoid error
+let g:NERDTreeExactMatchHighlightColor['.gitignore'] = s:git_orange " sets the color for .gitignore files
+let g:NERDTreePatternMatchHighlightColor = {} " this line is needed to avoid error
+let g:NERDTreePatternMatchHighlightColor['.*_spec\.rb$'] = s:rspec_red " sets the colo
+" dir-icons
+let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+let g:DevIconsEnableFoldersOpenClose = 1
+let g:WebDevIconsUnicodeDecorateFolderNodesDefaultSymbol = ''
+let g:DevIconsDefaultFolderOpenSymbol = ''
+" file-icons
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols = {}
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['html'] = ''
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['css'] = ''
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['md'] = ''
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['txt'] = ''
+'''
+# }}}

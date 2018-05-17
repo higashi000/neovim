@@ -43,23 +43,6 @@ nnoremap subp y:OverCommandLine<CR>%s!<C-r>=substitute(@0, '!', '\\!', 'g')<CR>!
 repo = 'cohama/lexima.vim'
 on_i = 1
 
-#Tree表示
-[[plugins]]
-repo = 'scrooloose/nerdtree'
-# hook_add {{{
-hook_add = '''
-    let g:NERDTreeDirArrow = 1
-    let g:NERDTreeDirArrowExpandable = '→'
-    let g:NERDTreeDirArrowCollapsible = '↓'
-    nnoremap <silent> <C-n> :NERDTreeToggle<CR>
-'''
-#}}}
-
-#toml　syntax
-[[plugins]]
-repo = 'cespare/vim-toml'
-on_ft = 'toml'
-
 #deoplete
 [[plugins]]
 repo = 'Shougo/deoplete.nvim'
