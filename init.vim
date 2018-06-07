@@ -18,7 +18,7 @@ endif
 
 "nvim_settings-----{{{
 "シンタックスを有効
-syntax on
+syntax enable
 "行番号を表示
 set number
 "タイトルを表示
@@ -60,6 +60,5 @@ highlight Normal ctermbg=none
 "アイコンフォント関係
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 "End nvim_settings-----}}}
-
 
 let g:deoplete#enable_at_startup = 1
