@@ -2,11 +2,23 @@
 repo = 'tomasr/molokai'
 
 [[plugins]]
+repo = 'Haron-Prime/Antares'
+
+#toml　syntax
+[[plugins]]
+repo = 'cespare/vim-toml'
+on_ft = 'toml'
+
+[[plugins]]
 repo = 'challenger-deep-theme/vim'
 
-# hook_add {{{
-hook_add = '''
+[[plugins]]
+repo = 'AlessandroYorba/Alduin'
+
+# nvim_colorscheme {{{
+hook_add =
+'''
+    colorscheme antares
     set background=dark
-    colorscheme molokai
 '''
 # }}}
