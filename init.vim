@@ -59,6 +59,9 @@ set clipboard+=unnamedplus
 highlight Normal ctermbg=none
 "アイコンフォント関係
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+"自作コマンド
+source ~/.config/nvim/vim_command/terminal.vim
 "End nvim_settings-----}}}
 
 let g:deoplete#enable_at_startup = 1
+
