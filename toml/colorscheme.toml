@@ -15,10 +15,16 @@ repo = 'challenger-deep-theme/vim'
 [[plugins]]
 repo = 'AlessandroYorba/Alduin'
 
+[[plugins]]
+repo = 'ajmwagar/vim-deus'
+
+[[plugins]]
+repo = 'w0ng/vim-hybrid'
+
 # nvim_colorscheme {{{
 hook_add =
 '''
-    colorscheme antares
+    colorscheme hybrid
     set background=dark
 '''
 # }}}
