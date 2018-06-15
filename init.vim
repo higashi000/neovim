@@ -20,8 +20,7 @@ endif
 "シンタックスを有効
 syntax enable
 "行番号を表示
-set number
-"タイトルを表示
+set number "タイトルを表示
 set title
 "インデント幅
 set shiftwidth=2
@@ -61,6 +60,8 @@ highlight Normal ctermbg=none
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 "自作コマンド
 source ~/.config/nvim/vim_command/terminal.vim
+"C++用の設定
+source ~/.config/nvim/vim_command/cpp.vim
 "End nvim_settings-----}}}
 
 let g:deoplete#enable_at_startup = 1
