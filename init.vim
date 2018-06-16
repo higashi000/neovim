@@ -62,6 +62,8 @@ let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 source ~/.config/nvim/vim_command/terminal.vim
 "C++用の設定
 source ~/.config/nvim/vim_command/cpp.vim
+"C-eでESCと同じ動作をするようにする
+source ~/.config/nvim/vim_command/esc.vim
 "End nvim_settings-----}}}
 
 let g:deoplete#enable_at_startup = 1
