@@ -61,7 +61,7 @@ let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 "自作コマンド
 source ~/.config/nvim/vim_command/terminal.vim
 "C++用の設定
-source ~/.config/nvim/vim_command/cpp.vim
+autocmd Filetype cpp source ~/.config/nvim/vim_command/std.vim
 "C-eでESCと同じ動作をするようにする
 source ~/.config/nvim/vim_command/esc.vim
 "End nvim_settings-----}}}
