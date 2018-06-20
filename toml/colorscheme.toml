@@ -21,10 +21,6 @@ repo = 'ajmwagar/vim-deus'
 [[plugins]]
 repo = 'w0ng/vim-hybrid'
 
-# Arduino用のsytax
-[[plugins]]
-repo = 'sudar/vim-arduino-syntax'
-
 # nvim_colorscheme {{{
 hook_add =
 '''
