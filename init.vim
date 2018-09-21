@@ -4,8 +4,8 @@ set runtimepath^=~/.cache/dein/repos/github.com/Shougo/dein.vim
 if dein#load_state('~/.cache/dein')
   call dein#begin('~/.cache/dein')
   call dein#load_toml('~/.config/nvim/toml/dein.toml',{'lazy' : 0})
+  call dein#load_toml('~/.config/nvim/toml/tree_plugins.toml', {'lazy' : 1})
   call dein#load_toml('~/.config/nvim/toml/colorscheme.toml',{'lazy' : 0})
-  call dein#load_toml('~/.config/nvim/toml/tree_plugins.toml',{'lazy' : 1})
   call dein#load_toml('~/.config/nvim/toml/dein_lazy.toml',{'lazy' : 1})
   call dein#end()
   call dein#save_state()
@@ -20,7 +20,8 @@ endif
 "シンタックスを有効
 syntax enable
 "行番号を表示
-set number "タイトルを表示
+set number
+"タイトルを表示
 set title
 "インデント幅
 set shiftwidth=2
@@ -58,13 +59,19 @@ set clipboard+=unnamedplus
 highlight Normal ctermbg=none
 "アイコンフォント関係
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
-"自作コマンド
+"ターミナル
 source ~/.config/nvim/vim_command/terminal.vim
 "C++用の設定
 autocmd Filetype cpp source ~/.config/nvim/vim_command/std.vim
-"C-eでESCと同じ動作をするようにする
-source ~/.config/nvim/vim_command/esc.vim
+"バッファをタブ化
+:tab ba
+let g:NERDDefaultAlign='left'
+noremap <Space>p :bprevious<CR>
+noremap <Space>n :bnext<CR>
+noremap <Space>t :Tnew<CR>
+noremap <Space>e :!bd;build;exe<CR>
+
+"filetype on
 "End nvim_settings-----}}}
 
 let g:deoplete#enable_at_startup = 1
-
