@@ -43,10 +43,10 @@ on_i = 1
 [[plugins]]
 repo = 'Shougo/context_filetype.vim'
 
+#---}}}
+
 [[plugins]]
 repo = 'osyo-manga/vim-precious'
-
-#---}}}
 
 [[plugins]]
 repo = 'autozimu/LanguageClient-neovim'
