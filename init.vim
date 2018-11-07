@@ -6,7 +6,6 @@ if dein#load_state('~/.cache/dein')
   call dein#load_toml('~/.config/nvim/toml/dein.toml',{'lazy' : 0})
   call dein#load_toml('~/.config/nvim/toml/tree_plugins.toml', {'lazy' : 1})
   call dein#load_toml('~/.config/nvim/toml/colorscheme.toml',{'lazy' : 0})
-  call dein#load_toml('~/.config/nvim/toml/dein_lazy.toml',{'lazy' : 1})
   call dein#end()
   call dein#save_state()
 endif
@@ -59,6 +58,8 @@ set clipboard+=unnamedplus
 highlight Normal ctermbg=none
 "アイコンフォント関係
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+"検索結果のハイライト解除
+noremap <ESC><ESC> :noh<CR>
 "ターミナル
 source ~/.config/nvim/vim_command/terminal.vim
 "C++用の設定
@@ -69,9 +70,9 @@ let g:NERDDefaultAlign='left'
 noremap <Space>p :bprevious<CR>
 noremap <Space>n :bnext<CR>
 noremap <Space>t :Tnew<CR>
-noremap <Space>e :!bd;build;exe<CR>
+inoremap jj <ESC>
 
-"filetype on
 "End nvim_settings-----}}}
 
 let g:deoplete#enable_at_startup = 1
+let g:airline_powerline_fonts = 1
