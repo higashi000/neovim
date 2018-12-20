@@ -58,9 +58,12 @@ hook_add = '''
 set hidden
 let g:LanguageClient_serverCommands = {
       \ 'c' : ['clangd'],
-      \ 'cpp': ['clangd'],
+      \ 'cpp' : ['clangd'],
+      \ 'd' : ['dls'],
       \ }
 let g:LanguageClient_loadSettings = 1
+let g:LanguageClient_settingsPath = expand('$HOME/.config/nvim/toml/LanguageClientSetting.json')
+let g:LanguageClient_hasSnippetSupport = 0
 
 nnoremap K :call LanguageClient#textDocument_hover()<CR>
 nnoremap F :call LanguageClient#textDocument_formatting()<CR>
@@ -105,7 +108,7 @@ repo = 'tpope/vim-surround'
 [[plugins]]
 repo = 'cohama/lexima.vim'
 on_i = 1
-
+#
 [[plugins]]
 repo = 'mattn/sonictemplate-vim'
 # on_i = 1
@@ -138,6 +141,7 @@ let g:airline#extensions#ale#error_symbol = '❌'
 let g:airline#extensions#ale#warning_symbol = '△'
 let g:airline#extensions#default#section_truncate_width = {}
 let g:airline#extensions#whitespace#enabled = 1
+let g:airline_powerline_fonts = 1
 '''
 #}}}
 
@@ -157,3 +161,9 @@ repo = 'vim-scripts/fcitx.vim'
 
 [[plugins]]
 repo = 'tomtom/tcomment_vim'
+
+[[plugins]]
+repo = 'vim-scripts/vim-auto-save'
+
+[[plugins]]
+repo = 'mattn/vim-trex'

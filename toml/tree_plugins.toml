@@ -3,7 +3,8 @@ repo = 'ryanoasis/vim-devicons'
 # hook_add ---{{{
 hook_add = '''
 let g:webdevicons_conceal_nerdtree_brackets = 1
-let g:WebDevIconsNerdTreeAfterGlyphPadding = ' '
+let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+"let g:WebDevIconsNerdTreeAfterGlyphPadding = ' '
 '''
 # }}}
 
@@ -12,10 +13,12 @@ let g:WebDevIconsNerdTreeAfterGlyphPadding = ' '
 repo = 'scrooloose/nerdtree'
 # hook_add {{{
 hook_add = '''
-    let g:NERDTreeDirArrow = 1
-    let g:NERDTreeDirArrowExpandable = '→'
-    let g:NERDTreeDirArrowCollapsible = '↓'
-    nnoremap <silent> <C-n> :NERDTreeToggle<CR>
+let g:NERDTreeDirArrow = 1
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
+let g:NERDTreeDirArrowExpandable = '→'
+let g:NERDTreeDirArrowCollapsible = '↓'
+nnoremap <silent> <C-n> :NERDTreeToggle<CR>
 '''
 #}}}
 
@@ -23,7 +26,7 @@ hook_add = '''
 repo = 'tiagofumo/vim-nerdtree-syntax-highlight'
 # hook_add ---{{{
 hook_add = '''
-  let s:rspec_red = 'FE405F'
+let s:rspec_red = 'FE405F'
 let s:git_orange = 'F54D27'
 let g:NERDTreeExactMatchHighlightColor = {} " this line is needed to avoid error
 let g:NERDTreeExactMatchHighlightColor['.gitignore'] = s:git_orange " sets the color for .gitignore files
